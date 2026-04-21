@@ -7,11 +7,10 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
 
-html{scroll-behavior:smooth;}
-
 body{
   background:#0a0a0a;
   color:#00ffcc;
+  text-align:center;
 }
 
 /* Navbar */
@@ -20,8 +19,6 @@ body{
   justify-content:space-between;
   padding:15px 30px;
   background:#000;
-  position:sticky;
-  top:0;
 }
 
 .navbar a{
@@ -30,71 +27,27 @@ body{
   margin:0 10px;
 }
 
-/* Hero */
-.hero{
-  text-align:center;
-  padding:80px 20px;
-}
-
-.hero span{
-  color:#00ffcc;
-  text-shadow:0 0 10px #00ffcc;
+/* Sections */
+.section{
+  padding:40px;
 }
 
 /* Button */
 .btn{
-  padding:12px 18px;
+  padding:10px 15px;
   background:#00ffcc;
   border:none;
-  border-radius:8px;
+  border-radius:5px;
   color:black;
   cursor:pointer;
-  margin-top:10px;
-  box-shadow:0 0 10px #00ffcc;
-}
-
-/* Cards */
-.card{
-  background:#111;
-  margin:20px auto;
-  padding:20px;
-  width:90%;
-  max-width:700px;
-  border-radius:15px;
-  border:1px solid #00ffcc;
-  box-shadow:0 0 10px #00ffcc;
-  text-align:center;
 }
 
 /* Image */
 img{
-  width:150px;
+  width:140px;
   border-radius:50%;
-  margin:10px 0;
+  margin:10px;
   border:2px solid #00ffcc;
-  box-shadow:0 0 20px #00ffcc;
-}
-
-/* Skills */
-.skill{margin:10px 0;text-align:left;}
-.bar{background:#222;border-radius:5px;}
-.fill{height:10px;background:#00ffcc;}
-
-/* Projects */
-.project{
-  background:#000;
-  padding:15px;
-  margin:10px 0;
-  border-radius:10px;
-  border:1px solid #00ffcc;
-}
-
-/* Footer */
-.footer{
-  text-align:center;
-  padding:15px;
-  background:#000;
-  margin-top:20px;
 }
 </style>
 
@@ -106,72 +59,32 @@ img{
   <h3>Irumejaz</h3>
   <div>
     <a href="#about">About</a>
-    <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </div>
 </div>
 
-<div class="hero">
-  <h1>Hi, I'm <span>Irumejaz</span> 👋</h1>
-  <p>I build modern websites for clients 🚀</p>
-
-  <a href="#contact">
-    <button class="btn">💼 Hire Me</button>
-  </a>
+<div class="section">
+  <h1>Hi, I'm Irumejaz 👋</h1>
+  <p>I build websites</p>
 </div>
 
-<div class="card" id="about">
+<div class="section" id="about">
   <h2>About Me</h2>
 
-  <!-- YOUR IMAGE -->
+  <!-- IMAGE -->
   <img src="myphoto.jpg">
 
-  <p>I am a freelance web developer. I create modern and responsive websites.</p>
+  <p>I am a freelance web developer.</p>
 </div>
 
-<div class="card">
-  <h2>Skills</h2>
+<div class="section" id="contact">
+  <h2>Contact</h2>
+  <p>Email: irumejaz472@gmail.com</p>
+  <p>WhatsApp: 03129140949</p>
 
-  <div class="skill">HTML
-    <div class="bar"><div class="fill" style="width:90%"></div></div>
-  </div>
-
-  <div class="skill">CSS
-    <div class="bar"><div class="fill" style="width:80%"></div></div>
-  </div>
-
-  <div class="skill">JavaScript
-    <div class="bar"><div class="fill" style="width:60%"></div></div>
-  </div>
-</div>
-
-<div class="card" id="projects">
-  <h2>My Work</h2>
-
-  <div class="project">
-    <h3>Business Website</h3>
-    <p>Modern responsive website design</p>
-  </div>
-
-  <div class="project">
-    <h3>My Portfolio Website</h3>
-    <p>This is my personal portfolio built using HTML & CSS.</p>
-  </div>
-</div>
-
-<div class="card" id="contact">
-  <h2>Contact Me</h2>
-
-  <p>📧 Email: irumejaz472@gmail.com</p>
-  <p>📱 WhatsApp: 03129140949</p>
-
-  <a href="https://wa.me/923129140949" target="_blank">
-    <button class="btn">💬 Chat on WhatsApp</button>
+  <a href="https://wa.me/923129140949">
+    <button class="btn">Chat on WhatsApp</button>
   </a>
-</div>
-
-<div class="footer">
-  <p>© 2026 Irumejaz | Developer</p>
 </div>
 
 </body>
