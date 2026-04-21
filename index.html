@@ -10,7 +10,10 @@
 html{scroll-behavior:smooth;}
 
 body{
-  background:#0f2027;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('https://images.unsplash.com/photo-1498050108023-c5249f4df085');
+  background-size: cover;
+  background-position: center;
   color:white;
 }
 
@@ -19,7 +22,7 @@ body{
   display:flex;
   justify-content:space-between;
   padding:15px 30px;
-  background:#000;
+  background:rgba(0,0,0,0.7);
   position:sticky;
   top:0;
 }
@@ -43,7 +46,7 @@ body{
 /* Button */
 .btn{
   padding:12px 18px;
-  background:#ff7eb3;
+  background:linear-gradient(45deg,#ff7eb3,#ff4e91);
   border:none;
   border-radius:8px;
   color:white;
@@ -53,22 +56,33 @@ body{
 
 /* Cards */
 .card{
-  background:rgba(255,255,255,0.1);
+  background:linear-gradient(135deg,#ff7eb3,#65d6ce);
   margin:20px auto;
   padding:20px;
   width:90%;
   max-width:700px;
   border-radius:15px;
+  color:white;
+  text-align:center;
+}
+
+/* Image */
+img{
+  width:130px;
+  border-radius:50%;
+  margin:10px 0;
+  border:3px solid white;
+  box-shadow:0 0 15px white;
 }
 
 /* Skills */
-.skill{margin:10px 0;}
+.skill{margin:10px 0;text-align:left;}
 .bar{background:#333;border-radius:5px;}
-.fill{height:10px;background:#ff7eb3;}
+.fill{height:10px;background:white;}
 
 /* Projects */
 .project{
-  background:#111;
+  background:rgba(0,0,0,0.3);
   padding:15px;
   margin:10px 0;
   border-radius:10px;
@@ -78,7 +92,7 @@ body{
 .footer{
   text-align:center;
   padding:15px;
-  background:#000;
+  background:rgba(0,0,0,0.7);
 }
 </style>
 
@@ -109,6 +123,9 @@ body{
 <!-- About -->
 <div class="card" id="about">
   <h2>About Me</h2>
+
+  <img src="myphoto.jpg">
+
   <p>I create clean and modern websites using HTML, CSS and JavaScript.</p>
 </div>
 
@@ -148,10 +165,10 @@ body{
 <div class="card" id="contact">
   <h2>Contact Me</h2>
 
-  <p>📧 Email: your@email.com</p>
-  <p>📱 WhatsApp: +92XXXXXXXXXX</p>
+  <p>📧 Email: irumejaz472@gmail.com</p>
+  <p>📱 WhatsApp: 03129140949</p>
 
-  <a href="https://wa.me/" target="_blank">
+  <a href="https://wa.me/923129140949" target="_blank">
     <button class="btn">💬 Chat on WhatsApp</button>
   </a>
 </div>
