@@ -1,153 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+<meta charset="UTF-8">
+<title>Irumejaz | Freelance Developer</title>
 
-        body {
-            background: #f4f6f9;
-            color: #333;
-            line-height: 1.6;
-        }
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:sans-serif;}
 
-        /* Navbar */
-        nav {
-            background: #2c3e50;
-            padding: 15px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
+html{scroll-behavior:smooth;}
 
-        nav .logo {
-            color: white;
-            font-size: 20px;
-            font-weight: bold;
-        }
+body{
+  background:#0f2027;
+  color:white;
+}
 
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 15px;
-        }
+/* Navbar */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  padding:15px 30px;
+  background:#000;
+  position:sticky;
+  top:0;
+}
 
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            padding: 6px 10px;
-        }
+.navbar a{
+  color:white;
+  text-decoration:none;
+  margin:0 10px;
+}
 
-        nav ul li a:hover {
-            background: #34495e;
-            border-radius: 5px;
-        }
+/* Hero */
+.hero{
+  text-align:center;
+  padding:80px 20px;
+}
 
-        /* Sections */
-        section {
-            padding: 60px 20px;
-            text-align: center;
-        }
+.hero span{
+  color:#ff7eb3;
+}
 
-        /* Hero */
-        .hero {
-            background: linear-gradient(to right, #74ebd5, #acb6e5);
-            color: white;
-            padding: 100px 20px;
-        }
+/* Button */
+.btn{
+  padding:12px 18px;
+  background:#ff7eb3;
+  border:none;
+  border-radius:8px;
+  color:white;
+  cursor:pointer;
+  margin-top:10px;
+}
 
-        .hero h1 {
-            font-size: 40px;
-            margin-bottom: 10px;
-        }
+/* Cards */
+.card{
+  background:rgba(255,255,255,0.1);
+  margin:20px auto;
+  padding:20px;
+  width:90%;
+  max-width:700px;
+  border-radius:15px;
+}
 
-        .btn {
-            margin-top: 20px;
-            padding: 10px 20px;
-            background: #2c3e50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+/* Skills */
+.skill{margin:10px 0;}
+.bar{background:#333;border-radius:5px;}
+.fill{height:10px;background:#ff7eb3;}
 
-        .btn:hover {
-            background: #1a252f;
-        }
+/* Projects */
+.project{
+  background:#111;
+  padding:15px;
+  margin:10px 0;
+  border-radius:10px;
+}
 
-        /* About */
-        .about {
-            background: white;
-        }
+/* Footer */
+.footer{
+  text-align:center;
+  padding:15px;
+  background:#000;
+}
+</style>
 
-        /* Contact */
-        .contact {
-            background: #ecf0f1;
-        }
-
-        footer {
-            background: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
-
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                width: 100%;
-                margin-top: 10px;
-            }
-        }
-    </style>
 </head>
+
 <body>
 
-    <!-- Navbar -->
-    <nav>
-        <div class="logo">MyPortfolio</div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<!-- Navbar -->
+<div class="navbar">
+  <h3>Irumejaz</h3>
+  <div>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <h1>Hello, I'm Irum 👋</h1>
-        <p>Welcome to my personal website. This is my first GitHub Pages project.</p>
-        <button class="btn">Explore More</button>
-    </section>
+<!-- Hero -->
+<div class="hero">
+  <h1>Hi, I'm <span>Irumejaz</span> 👋</h1>
+  <p>I build modern websites for clients 🚀</p>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <h2>About Me</h2>
-        <p>
-            Hi! I'm learning web development and this is my personal practice website.
-            I am building my skills step by step and exploring HTML, CSS, and GitHub Pages.
-        </p>
-    </section>
+  <a href="#contact">
+    <button class="btn">💼 Hire Me</button>
+  </a>
+</div>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: example@gmail.com</p>
-        <p>Phone: +92XXXXXXXXXX</p>
-    </section>
+<!-- About -->
+<div class="card" id="about">
+  <h2>About Me</h2>
+  <p>I create clean and modern websites using HTML, CSS and JavaScript.</p>
+</div>
 
-    <!-- Footer -->
-    <footer>
-        © 2026 My Personal Website | All Rights Reserved
-    </footer>
+<!-- Skills -->
+<div class="card">
+  <h2>Skills</h2>
+
+  <div class="skill">HTML
+    <div class="bar"><div class="fill" style="width:90%"></div></div>
+  </div>
+
+  <div class="skill">CSS
+    <div class="bar"><div class="fill" style="width:80%"></div></div>
+  </div>
+
+  <div class="skill">JavaScript
+    <div class="bar"><div class="fill" style="width:60%"></div></div>
+  </div>
+</div>
+
+<!-- Projects -->
+<div class="card" id="projects">
+  <h2>My Work</h2>
+
+  <div class="project">
+    <h3>Business Website</h3>
+    <p>Modern responsive website design</p>
+  </div>
+
+  <div class="project">
+    <h3>Portfolio Website</h3>
+    <p>Personal portfolio with animations</p>
+  </div>
+</div>
+
+<!-- Contact -->
+<div class="card" id="contact">
+  <h2>Contact Me</h2>
+
+  <p>📧 Email: your@email.com</p>
+  <p>📱 WhatsApp: +92XXXXXXXXXX</p>
+
+  <a href="https://wa.me/" target="_blank">
+    <button class="btn">💬 Chat on WhatsApp</button>
+  </a>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <p>© 2026 Irumejaz | Freelance Developer</p>
+</div>
 
 </body>
 </html>
