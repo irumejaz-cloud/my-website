@@ -1,57 +1,46 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Irumejaz | Developer</title>
+<title>Irumejaz | Web Developer</title>
 
 <style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:Arial;
-}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+html{scroll-behavior:smooth;}
 
 body{
-  background:
-    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
-    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+  background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),
+  url('myphoto.jpg.jpeg');
   background-size:cover;
-  background-position:center;
   color:white;
 }
 
+/* Navbar */
 .navbar{
   display:flex;
   justify-content:space-between;
   padding:15px 30px;
   background:rgba(0,0,0,0.6);
-  backdrop-filter: blur(10px);
 }
 
 .navbar a{
   color:white;
   text-decoration:none;
   margin:0 10px;
-  transition:0.3s;
 }
 
-.navbar a:hover{
-  color:#00c6ff;
-}
-
+/* Hero */
 .hero{
   text-align:center;
   padding:100px 20px;
 }
 
-.hero span{
-  color:#00c6ff;
+.hero h1{
+  font-size:45px;
 }
 
-.hero h1{
-  font-size:40px;
+.hero span{
+  color:#00c6ff;
 }
 
 .hero p{
@@ -59,67 +48,59 @@ body{
   font-size:18px;
 }
 
+/* Button */
 .btn{
   padding:12px 20px;
-  background:linear-gradient(45deg,#00c6ff,#0072ff);
+  background:#00c6ff;
   border:none;
-  border-radius:25px;
-  color:white;
+  border-radius:30px;
+  color:black;
   cursor:pointer;
   margin-top:15px;
-  font-size:16px;
-  transition:0.3s;
 }
 
-.btn:hover{
-  transform:scale(1.05);
-}
-
+/* Cards */
 .card{
-  background:rgba(255,255,255,0.1);
-  backdrop-filter:blur(10px);
-  margin:30px auto;
+  background:rgba(0,0,0,0.6);
+  margin:25px auto;
   padding:25px;
   width:90%;
-  max-width:700px;
-  border-radius:20px;
-  text-align:center;
-  box-shadow:0 0 20px rgba(0,0,0,0.5);
+  max-width:800px;
+  border-radius:15px;
 }
 
+/* Image */
 img{
   width:130px;
   border-radius:50%;
-  margin:10px 0;
-  border:3px solid white;
+  display:block;
+  margin:10px auto;
 }
 
-.skill{
-  margin:10px 0;
-  text-align:left;
+/* Services */
+.services{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  justify-content:center;
 }
 
-.bar{
-  background:#333;
-  border-radius:5px;
-}
-
-.fill{
-  height:10px;
-  background:#00c6ff;
-}
-
-.project{
-  background:rgba(0,0,0,0.4);
+.service{
+  background:#111;
   padding:15px;
-  margin:10px 0;
   border-radius:10px;
+  width:150px;
 }
 
+/* Skills */
+.bar{background:#333;border-radius:5px;}
+.fill{height:10px;background:#00c6ff;}
+
+/* Footer */
 .footer{
   text-align:center;
   padding:15px;
-  background:rgba(0,0,0,0.6);
+  background:#000;
 }
 </style>
 
@@ -131,6 +112,7 @@ img{
   <h3>Irumejaz</h3>
   <div>
     <a href="#about">About</a>
+    <a href="#services">Services</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </div>
@@ -138,64 +120,67 @@ img{
 
 <div class="hero">
   <h1>Hi, I'm <span>Irumejaz</span> 👋</h1>
-  <p>I build modern websites for clients 🚀</p>
+  <p>I create modern and responsive websites for clients</p>
 
   <a href="#contact">
-    <button class="btn">💼 Hire Me</button>
+    <button class="btn">Hire Me</button>
   </a>
 </div>
 
 <div class="card" id="about">
   <h2>About Me</h2>
-
   <img src="myphoto.jpg.jpeg">
-
-  <p>I am a freelance web developer. I create modern and responsive websites.</p>
+  <p>I am a freelance web developer. I build clean and modern websites.</p>
 </div>
 
+<!-- SERVICES -->
+<div class="card" id="services">
+  <h2>My Services</h2>
+
+  <div class="services">
+    <div class="service">Website Design</div>
+    <div class="service">Responsive Design</div>
+    <div class="service">Landing Pages</div>
+    <div class="service">Portfolio Websites</div>
+  </div>
+</div>
+
+<!-- SKILLS -->
 <div class="card">
   <h2>Skills</h2>
 
-  <div class="skill">HTML
-    <div class="bar"><div class="fill" style="width:90%"></div></div>
-  </div>
+  HTML
+  <div class="bar"><div class="fill" style="width:90%"></div></div>
 
-  <div class="skill">CSS
-    <div class="bar"><div class="fill" style="width:80%"></div></div>
-  </div>
+  CSS
+  <div class="bar"><div class="fill" style="width:80%"></div></div>
 
-  <div class="skill">JavaScript
-    <div class="bar"><div class="fill" style="width:60%"></div></div>
-  </div>
+  JavaScript
+  <div class="bar"><div class="fill" style="width:60%"></div></div>
 </div>
 
+<!-- PROJECTS -->
 <div class="card" id="projects">
-  <h2>My Work</h2>
+  <h2>Projects</h2>
 
-  <div class="project">
-    <h3>Business Website</h3>
-    <p>Modern responsive website design</p>
-  </div>
-
-  <div class="project">
-    <h3>My Portfolio Website</h3>
-    <p>This is my personal portfolio built using HTML & CSS.</p>
-  </div>
+  <p><b>Business Website:</b> Modern responsive design</p>
+  <p><b>Portfolio Website:</b> Personal portfolio project</p>
 </div>
 
+<!-- CONTACT -->
 <div class="card" id="contact">
-  <h2>Contact Me</h2>
+  <h2>Contact</h2>
 
-  <p>📧 Email: irumejaz472@gmail.com</p>
-  <p>📱 WhatsApp: 03129140949</p>
+  <p>Email: irumejaz472@gmail.com</p>
+  <p>WhatsApp: 03129140949</p>
 
-  <a href="https://wa.me/923129140949" target="_blank">
-    <button class="btn">💬 Chat on WhatsApp</button>
+  <a href="https://wa.me/923129140949">
+    <button class="btn">Chat on WhatsApp</button>
   </a>
 </div>
 
 <div class="footer">
-  <p>© 2026 Irumejaz | Developer</p>
+  <p>© 2026 Irumejaz</p>
 </div>
 
 </body>
