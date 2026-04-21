@@ -5,12 +5,20 @@
 <title>Irumejaz | Developer</title>
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+}
 
 body{
-  background:#0a0a0a;
-  color:#00ffcc;
-  text-align:center;
+  background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+  background-size:cover;
+  background-position:center;
+  color:white;
 }
 
 /* Navbar */
@@ -18,36 +26,107 @@ body{
   display:flex;
   justify-content:space-between;
   padding:15px 30px;
-  background:#000;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
 }
 
 .navbar a{
-  color:#00ffcc;
+  color:white;
   text-decoration:none;
   margin:0 10px;
+  transition:0.3s;
 }
 
-/* Sections */
-.section{
-  padding:40px;
+.navbar a:hover{
+  color:#00c6ff;
+}
+
+/* Hero */
+.hero{
+  text-align:center;
+  padding:100px 20px;
+}
+
+.hero span{
+  color:#00c6ff;
+}
+
+.hero h1{
+  font-size:40px;
+}
+
+.hero p{
+  margin:10px 0;
+  font-size:18px;
 }
 
 /* Button */
 .btn{
-  padding:10px 15px;
-  background:#00ffcc;
+  padding:12px 20px;
+  background:linear-gradient(45deg,#00c6ff,#0072ff);
   border:none;
-  border-radius:5px;
-  color:black;
+  border-radius:25px;
+  color:white;
   cursor:pointer;
+  margin-top:15px;
+  font-size:16px;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:scale(1.05);
+}
+
+/* Glass Card */
+.card{
+  background:rgba(255,255,255,0.1);
+  backdrop-filter:blur(10px);
+  margin:30px auto;
+  padding:25px;
+  width:90%;
+  max-width:700px;
+  border-radius:20px;
+  text-align:center;
+  box-shadow:0 0 20px rgba(0,0,0,0.5);
 }
 
 /* Image */
 img{
-  width:140px;
+  width:130px;
   border-radius:50%;
-  margin:10px;
-  border:2px solid #00ffcc;
+  margin:10px 0;
+  border:3px solid white;
+}
+
+/* Skills */
+.skill{
+  margin:10px 0;
+  text-align:left;
+}
+
+.bar{
+  background:#333;
+  border-radius:5px;
+}
+
+.fill{
+  height:10px;
+  background:#00c6ff;
+}
+
+/* Projects */
+.project{
+  background:rgba(0,0,0,0.4);
+  padding:15px;
+  margin:10px 0;
+  border-radius:10px;
+}
+
+/* Footer */
+.footer{
+  text-align:center;
+  padding:15px;
+  background:rgba(0,0,0,0.6);
 }
 </style>
 
@@ -59,32 +138,71 @@ img{
   <h3>Irumejaz</h3>
   <div>
     <a href="#about">About</a>
+    <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </div>
 </div>
 
-<div class="section">
-  <h1>Hi, I'm Irumejaz 👋</h1>
-  <p>I build websites</p>
+<div class="hero">
+  <h1>Hi, I'm <span>Irumejaz</span> 👋</h1>
+  <p>I build modern websites for clients 🚀</p>
+
+  <a href="#contact">
+    <button class="btn">💼 Hire Me</button>
+  </a>
 </div>
 
-<div class="section" id="about">
+<div class="card" id="about">
   <h2>About Me</h2>
 
-  <!-- IMAGE -->
   <img src="myphoto.jpg">
 
-  <p>I am a freelance web developer.</p>
+  <p>I am a freelance web developer. I create modern and responsive websites.</p>
 </div>
 
-<div class="section" id="contact">
-  <h2>Contact</h2>
-  <p>Email: irumejaz472@gmail.com</p>
-  <p>WhatsApp: 03129140949</p>
+<div class="card">
+  <h2>Skills</h2>
 
-  <a href="https://wa.me/923129140949">
-    <button class="btn">Chat on WhatsApp</button>
+  <div class="skill">HTML
+    <div class="bar"><div class="fill" style="width:90%"></div></div>
+  </div>
+
+  <div class="skill">CSS
+    <div class="bar"><div class="fill" style="width:80%"></div></div>
+  </div>
+
+  <div class="skill">JavaScript
+    <div class="bar"><div class="fill" style="width:60%"></div></div>
+  </div>
+</div>
+
+<div class="card" id="projects">
+  <h2>My Work</h2>
+
+  <div class="project">
+    <h3>Business Website</h3>
+    <p>Modern responsive website design</p>
+  </div>
+
+  <div class="project">
+    <h3>My Portfolio Website</h3>
+    <p>This is my personal portfolio built using HTML & CSS.</p>
+  </div>
+</div>
+
+<div class="card" id="contact">
+  <h2>Contact Me</h2>
+
+  <p>📧 Email: irumejaz472@gmail.com</p>
+  <p>📱 WhatsApp: 03129140949</p>
+
+  <a href="https://wa.me/923129140949" target="_blank">
+    <button class="btn">💬 Chat on WhatsApp</button>
   </a>
+</div>
+
+<div class="footer">
+  <p>© 2026 Irumejaz | Developer</p>
 </div>
 
 </body>
